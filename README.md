@@ -57,3 +57,42 @@ ROC-AUC score: 0.82
 Robust performance despite class imbalance
 (Refer to ROC curves and comparison charts in the project report for detailed visualization )
 
+**🧪 How It Works**
+Input: gRNA + DNA sequence
+Encoding → 8×23 matrix
+Flatten → Feature vector (184)
+
+**Model predicts:**
+✅ On-target
+⚠️ Off-target (with confidence score)
+
+**💻 Installation & Usage**
+
+# Clone the repository
+git clone https://github.com/your-username/crispr-offtarget-prediction.git
+cd crispr-offtarget-prediction
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run training
+python train.py
+
+# Run prediction
+python predict.py
+
+**🔍 Innovation & Contribution**
+Introduces a simple yet effective FNN approach compared to complex architectures
+Demonstrates that feature representation matters more than model complexity
+Bridges bioinformatics + deep learning for practical CRISPR safety
+
+**⚠️ Limitations**
+Class imbalance still affects prediction sensitivity
+Limited real-world validation
+Does not yet incorporate genomic context features
+
+**🔮 Future Scope**
+Integrate cancer-specific datasets (TCGA, COSMIC)
+Apply transformers for sequence modeling
+Develop web/app interface for real-time prediction
+Incorporate biological context-aware features
